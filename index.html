@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face and Gender and Age Detector</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Face and Gender and Age Detector</h1>
+    </header>
+    <main>
+      <div class="webcam-container">
+        <video id="webcam" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <div id="loading-indicator" class="loading-indicator">Loading models, please wait...</div>
+      </div>
+      <div class="button-container">
+        <button id="start-button"><i class="fa-solid fa-play"></i> Start Detection</button>
+      </div>
+    </main>
+    <footer><p>Powered by The Quest</p></footer>
+  </div>
+  
+  <!-- External scripts -->
+  <script src="https://unpkg.com/face-api.js@latest/dist/face-api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
